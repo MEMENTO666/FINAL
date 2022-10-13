@@ -57,19 +57,30 @@ ul {
   justify-content:space-around;
   width:100%;
   font-weight: bold;
-
 }
 
 ul > li {
   list-style: none;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+#horizon_underline {
+  position: absolute;
+  width:0;
+  background-color: #ce0f95;
+  height:0;
+  top:0;
+  /* left: 30px; */
+  
+
+
 }
 
 #introText {
   width:100%;
   height:100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,11 +103,25 @@ ul > li {
   color: white;
 }
 
+/********************** Intro media section section ********************/
+
+@media screen and (max-width:768px) {
+  ul {
+    justify-content: space-evenly;
+  }
+
+  ul > li {
+    font-size: 11px;
+  }
+}
+/************************ protfolio_01 section *********************/
+
 #portfolio_01 {
   width:100vw;
   height:100vh;
   background-color: #211E1E;
   display: flex;
+  /* border: 1px solid blue; */
 }
 
 #portfolio_imageBox_01 {
@@ -126,7 +151,7 @@ ul > li {
   justify-content: flex-end;
 }
 
-#web {
+#web_01 {
   width:70px;
   height:50px;
   background-color: rgb(47, 47, 201);
@@ -140,7 +165,7 @@ ul > li {
   color: white;
 }
 
-#design {
+#design_01 {
   width:70px;
   height:50px;
   background-color: rgb(23, 214, 97);
@@ -152,9 +177,7 @@ ul > li {
   font-weight: bold;
   color: white;
 
-
 }
-
 
 #portfolio_detail_01 {
   width:30vw;
@@ -177,17 +200,13 @@ ul > li {
   line-height: 10px;
   color:#444444;
   margin: 10px;
-
 }
 
 #portfolio_detail_01 > div > p {
   font-size: 15px;
 }
 
-
-
-
-#colorBox {
+#colorBox_01 {
   width:200px;
   height:30px;
   /* background-color: gray; */
@@ -196,22 +215,22 @@ ul > li {
   justify-content: center;
 }
 
-#colorBox > div {
+#colorBox_01 > div {
   width:20px;
   height:20px;
   margin: 5px;
   border-radius: 50%;
 }
 
-#colorBox > div:nth-child(1) {
+#colorBox_01 > div:nth-child(1) {
   background-color: #4D0DD6;
 }
 
-#colorBox > div:nth-child(2) {
+#colorBox_01 > div:nth-child(2) {
   background-color: #CC3942;
 }
 
-#colorBox > div:nth-child(3) {
+#colorBox_01 > div:nth-child(3) {
   background-color: #d1ce23;
 }
 
@@ -223,4 +242,217 @@ ul > li {
 #portfolio_detail_01 > div:nth-child(6) {
   width:200px;
   height:130px;
+}
+
+        /* *************************portfolio_01 media section**************/
+
+@media screen and (max-width:768px) {
+  #portfolio_01 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #portfolio_imageBox_01 {
+    width:400px;
+    height:300px;
+    margin-bottom: 50px;
+    padding:20px;
+  }
+  #portfolio_image_01 {
+    width:350px;
+    height:250px;
+  }
+  #portfolio_detail_01 {
+    width:100%;
+    flex-wrap: wrap;
+    z-index: 1;
+    height:50%;
+    justify-content: space-evenly;
+  }
+  #portfolio_detail_01 > div > p {
+    font-size: 14px;
+  }
+  #portfolio_image_button_01 {
+    margin-left: 120px;
+  }
+  #portfolio_image_button_01 > div {
+    width:60px;
+    height:40px;
+    font-size: 11px;
+  }
+}
+
+
+
+     /***************************portfolio_02 section******************/
+
+#portfolio_02 {
+  width:100vw;
+  height:100vh;
+  background-color: #211E1E;
+  display: flex;
+  /* border: 1px solid yellow; */
+}
+
+#portfolio_imageBox_02 {
+  width:70vw;
+  height:100vh;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+#portfolio_image_02 {
+  width:45vw;
+  height:40vh;
+  background-color: #4E4E4E;
+  border-radius: 20px;
+}
+
+#portfolio_image_button_02 {
+  width:45vw;
+  height:8vh;
+  /* border: 1px solid red; */
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#web_02 {
+  width:70px;
+  height:50px;
+  background-color: rgb(199, 38, 51);
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+#design_02 {
+  width:70px;
+  height:50px;
+  background-color: rgb(236, 240, 238);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+
+}
+
+#portfolio_detail_02 {
+  width:30vw;
+  height:100vh;
+  background-color: white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#portfolio_detail_02> div {
+  width:200px;
+  height:80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  flex-direction: column;
+  line-height: 10px;
+  color:#444444;
+  margin: 10px;
+
+}
+
+#portfolio_detail_02 > div > p {
+  font-size: 15px;
+}
+
+
+
+
+#colorBox_02 {
+  width:200px;
+  height:30px;
+  /* background-color: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorBox_02 > div {
+  width:20px;
+  height:20px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+#colorBox_02 > div:nth-child(1) {
+  background-color: #0dd639;
+}
+
+#colorBox_02 > div:nth-child(2) {
+  background-color: #ce0f95;
+}
+
+#colorBox_02 > div:nth-child(3) {
+  background-color: #2f00ff;
+}
+
+#portfolio_detail_02 > div:nth-child(5) {
+  width:200px;
+  height:160px;
+}
+
+#portfolio_detail_02 > div:nth-child(6) {
+  width:200px;
+  height:130px;
+}
+
+ /* *************************portfolio_02 media section**************/
+
+ @media screen and (max-width:768px) {
+  #portfolio_02 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #portfolio_imageBox_02 {
+    width:400px;
+    height:300px;
+    margin-bottom: 50px;
+    padding:20px;
+  }
+  #portfolio_image_02 {
+    width:350px;
+    height:250px;
+  }
+  #portfolio_detail_02 {
+    width:100%;
+    flex-wrap: wrap;
+    z-index: 1;
+    height:50%;
+    justify-content: space-evenly;
+  }
+  #portfolio_detail_02 > div > p {
+    font-size: 14px;
+  }
+  #portfolio_image_button_02 {
+    margin-left: 120px;
+  }
+  #portfolio_image_button_02 > div {
+    width:60px;
+    height:40px;
+    font-size: 11px;
+  }
 }
