@@ -8,7 +8,7 @@ body {
 
 #container {
   width:100vw;
-  height:300vh;
+  height:400vh;
   display: flex;
   flex-direction: column;
 }
@@ -40,6 +40,7 @@ body {
   height:45px;
   background-color: white;
   border-radius: 50%;
+  cursor: pointer;
   
 }
 
@@ -52,30 +53,41 @@ body {
   justify-content: center;
 }
 
-ul {
+#MenuList {
   display: flex;
   justify-content:space-around;
   width:100%;
   font-weight: bold;
+  position: relative;
 }
 
-ul > li {
+#MenuList > li {
   list-style: none;
   color: white;
   font-size: 16px;
+  position: relative;
+  cursor: pointer;
 }
 
-#horizon_underline {
+/*** header menu underline section ****/
+
+ #MenuList > li::after {
+  content: "";
+  height:3px;
+  width:0px;
+  background-color: #CC3942;
+  transition: 0.3s;
   position: absolute;
-  width:0;
-  background-color: #ce0f95;
-  height:0;
-  top:0;
-  /* left: 30px; */
-  
-
-
+  bottom:0;
+  left: 0;
+  border-radius: 50%;
 }
+
+#MenuList > li:hover::after {
+  width:100%;
+}
+
+
 
 #introText {
   width:100%;
@@ -106,12 +118,14 @@ ul > li {
 /********************** Intro media section section ********************/
 
 @media screen and (max-width:768px) {
-  ul {
+  #MenuList {
     justify-content: space-evenly;
   }
 
-  ul > li {
+  #MenuList > li {
     font-size: 11px;
+    transition: 0.5s;
+
   }
 }
 /************************ protfolio_01 section *********************/
@@ -132,6 +146,8 @@ ul > li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.4s;
+
 }
 
 #portfolio_image_01 {
@@ -139,6 +155,9 @@ ul > li {
   height:40vh;
   background-color: #4E4E4E;
   border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+
 }
 
 #portfolio_image_button_01 {
@@ -149,6 +168,7 @@ ul > li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 #web_01 {
@@ -163,6 +183,8 @@ ul > li {
   font-size: 14px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
+
 }
 
 #design_01 {
@@ -176,6 +198,7 @@ ul > li {
   font-size: 14px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 
 }
 
@@ -187,6 +210,8 @@ ul > li {
   align-items:center;
   justify-content: center;
   flex-direction: column;
+  transition: 0.4s;
+
 }
 
 #portfolio_detail_01 > div {
@@ -244,23 +269,28 @@ ul > li {
   height:130px;
 }
 
-        /* *************************portfolio_01 media section**************/
+/* *********portfolio_01 media section*******/
 
 @media screen and (max-width:768px) {
   #portfolio_01 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
   #portfolio_imageBox_01 {
     width:400px;
     height:300px;
     margin-bottom: 50px;
     padding:20px;
+    transition: 0.4s;
+
   }
   #portfolio_image_01 {
     width:350px;
     height:250px;
+    transition: 0.4s;
+
   }
   #portfolio_detail_01 {
     width:100%;
@@ -268,23 +298,31 @@ ul > li {
     z-index: 1;
     height:50%;
     justify-content: space-evenly;
+    transition: 0.4s;
+
   }
   #portfolio_detail_01 > div > p {
     font-size: 14px;
+    transition: 0.4s;
+
   }
   #portfolio_image_button_01 {
     margin-left: 120px;
+    transition: 0.4s;
+
   }
   #portfolio_image_button_01 > div {
     width:60px;
     height:40px;
     font-size: 11px;
+    transition: 0.4s;
+
   }
 }
 
 
 
-     /***************************portfolio_02 section******************/
+/*********portfolio_02 section**************/
 
 #portfolio_02 {
   width:100vw;
@@ -302,6 +340,7 @@ ul > li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.4s;
   
 }
 
@@ -310,6 +349,9 @@ ul > li {
   height:40vh;
   background-color: #4E4E4E;
   border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+
 }
 
 #portfolio_image_button_02 {
@@ -320,6 +362,8 @@ ul > li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  transition: 0.4s;
+
 }
 
 #web_02 {
@@ -334,6 +378,9 @@ ul > li {
   font-size: 14px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
+  transition: 0.4s;
+
 }
 
 #design_02 {
@@ -347,6 +394,8 @@ ul > li {
   font-size: 14px;
   font-weight: bold;
   color: black;
+  cursor: pointer;
+  transition: 0.4s;
 
 }
 
@@ -358,6 +407,8 @@ ul > li {
   align-items:center;
   justify-content: center;
   flex-direction: column;
+  transition: 0.4s;
+
 }
 
 #portfolio_detail_02> div {
@@ -371,15 +422,15 @@ ul > li {
   line-height: 10px;
   color:#444444;
   margin: 10px;
+  transition: 0.4s;
 
 }
 
 #portfolio_detail_02 > div > p {
   font-size: 15px;
+  transition: 0.4s;
+
 }
-
-
-
 
 #colorBox_02 {
   width:200px;
@@ -388,6 +439,8 @@ ul > li {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s;
+
 }
 
 #colorBox_02 > div {
@@ -395,6 +448,8 @@ ul > li {
   height:20px;
   margin: 5px;
   border-radius: 50%;
+  transition: 0.4s;
+
 }
 
 #colorBox_02 > div:nth-child(1) {
@@ -419,7 +474,7 @@ ul > li {
   height:130px;
 }
 
- /* *************************portfolio_02 media section**************/
+ /* *************portfolio_02 media section**************/
 
  @media screen and (max-width:768px) {
   #portfolio_02 {
@@ -456,3 +511,229 @@ ul > li {
     font-size: 11px;
   }
 }
+
+/* **************profile section********* */
+
+  #profile {
+    width:100vw;
+    height:100vh;
+    border: 1px solid blue;
+    background-color: #211E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #leftInfo {
+    width:40vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /** 프로필 circle box **/
+  #profile_image {
+    width:30vw;
+    height:40vh;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /** 프로필 사진 첨부 **/
+  #profile_image > div {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  /**이름,연도,연락처 등등**/
+  #profile_info {
+    width:30vw;
+    height:40vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile_info_text {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+  }
+
+  #profile_info_text > li{
+    list-style: none;
+    color: #c0c0c0;
+    font-size: 15px;
+  }
+
+  #rightInfo {
+    width:30vw;
+    height:80vh;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  #resume {
+    width:30vw;
+    height:40vh;
+    border: 1px solid white;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+
+  }
+
+  #resume h2 {
+    padding: 10px;
+    color: white;
+  }
+
+  #resume p {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+  /** SKILL 아이콘 첨부 **/
+  #skill {
+    width: 30vw;
+    height:40vh;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #skill_text {
+    width:30vw;
+    height:6vh;
+    border:1px solid #CC3942;
+    display: flex;
+    align-items: center;
+  }
+
+  #skill_text > h2 {
+    padding: 10px;
+    color: white;
+  }
+
+  #skillcircle_Box_01 {
+    width:30vw;
+    height:15vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border: 1px solid white;
+  }
+
+
+
+  #skillcircle_Box_01 > ul   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2px;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+  }
+  
+
+  #skillcircle_Box_01 > ul > li {
+    width:40px;
+    height:40px;
+    background-color: white;
+    border-radius: 100%;
+    list-style: none;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+
+  #skillcircle_Box_02 {
+    width:30vw;
+    height:15vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border: 1px solid white;
+  }
+
+  #skillcircle_Box_02 > ul   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2px;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+  }
+  
+
+  #skillcircle_Box_02 > ul > li {
+    width:40px;
+    height:40px;
+    background-color: white;
+    border-radius: 100%;
+    list-style: none;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* #skillcircle_Box > div {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    margin: 20px;
+  }
+
+  #skillcircle_Box_2 {
+    width:40vw;
+    height:15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #skillcircle_Box_2 > div {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    margin: 20px;
+  } */
+
