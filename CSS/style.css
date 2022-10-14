@@ -41,7 +41,6 @@ body {
   background-color: white;
   border-radius: 50%;
   cursor: pointer;
-  
 }
 
 #Menubox {
@@ -87,8 +86,6 @@ body {
   width:100%;
 }
 
-
-
 #introText {
   width:100%;
   height:100vh;
@@ -115,7 +112,7 @@ body {
   color: white;
 }
 
-/********************** Intro media section section ********************/
+/********************** Intro media section  ********************/
 
 @media screen and (max-width:768px) {
   #MenuList {
@@ -125,7 +122,6 @@ body {
   #MenuList > li {
     font-size: 11px;
     transition: 0.5s;
-
   }
 }
 /************************ protfolio_01 section *********************/
@@ -147,7 +143,6 @@ body {
   align-items: center;
   flex-direction: column;
   transition: 0.4s;
-
 }
 
 #portfolio_image_01 {
@@ -157,7 +152,6 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.4s;
-
 }
 
 #portfolio_image_button_01 {
@@ -168,7 +162,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 #web_01 {
@@ -184,7 +177,6 @@ body {
   font-weight: bold;
   color: white;
   cursor: pointer;
-
 }
 
 #design_01 {
@@ -199,7 +191,6 @@ body {
   font-weight: bold;
   color: white;
   cursor: pointer;
-
 }
 
 #portfolio_detail_01 {
@@ -211,7 +202,6 @@ body {
   justify-content: center;
   flex-direction: column;
   transition: 0.4s;
-
 }
 
 #portfolio_detail_01 > div {
@@ -316,11 +306,8 @@ body {
     height:40px;
     font-size: 11px;
     transition: 0.4s;
-
   }
 }
-
-
 
 /*********portfolio_02 section**************/
 
@@ -351,7 +338,6 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.4s;
-
 }
 
 #portfolio_image_button_02 {
@@ -363,7 +349,6 @@ body {
   align-items: center;
   justify-content: flex-end;
   transition: 0.4s;
-
 }
 
 #web_02 {
@@ -380,7 +365,6 @@ body {
   color: white;
   cursor: pointer;
   transition: 0.4s;
-
 }
 
 #design_02 {
@@ -396,7 +380,6 @@ body {
   color: black;
   cursor: pointer;
   transition: 0.4s;
-
 }
 
 #portfolio_detail_02 {
@@ -408,7 +391,6 @@ body {
   justify-content: center;
   flex-direction: column;
   transition: 0.4s;
-
 }
 
 #portfolio_detail_02> div {
@@ -423,13 +405,11 @@ body {
   color:#444444;
   margin: 10px;
   transition: 0.4s;
-
 }
 
 #portfolio_detail_02 > div > p {
   font-size: 15px;
   transition: 0.4s;
-
 }
 
 #colorBox_02 {
@@ -440,7 +420,6 @@ body {
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-
 }
 
 #colorBox_02 > div {
@@ -449,7 +428,6 @@ body {
   margin: 5px;
   border-radius: 50%;
   transition: 0.4s;
-
 }
 
 #colorBox_02 > div:nth-child(1) {
@@ -517,7 +495,7 @@ body {
   #profile {
     width:100vw;
     height:100vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-color: #211E1E;
     display: flex;
     justify-content: center;
@@ -532,11 +510,12 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   /** 프로필 circle box **/
   #profile_image {
     width:30vw;
     height:40vh;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,7 +533,7 @@ body {
   #profile_info {
     width:30vw;
     height:40vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
   }
@@ -574,7 +553,7 @@ body {
   #rightInfo {
     width:30vw;
     height:80vh;
-    border:1px solid red;
+    /* border:1px solid red; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -582,20 +561,20 @@ body {
   }
 
   #resume {
-    width:30vw;
+    width:35vw;
     height:40vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     align-items:flex-start;
     justify-content: center;
     flex-direction: column;
     line-height: 40px;
-
   }
 
   #resume h2 {
     padding: 10px;
     color: white;
+    letter-spacing: 2px;
   }
 
   #resume p {
@@ -603,13 +582,13 @@ body {
     color: white;
     font-size: 15px;
     font-weight: bold;
-
   }
+  
   /** SKILL 아이콘 첨부 **/
   #skill {
     width: 30vw;
     height:40vh;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
   }
@@ -617,9 +596,10 @@ body {
   #skill_text {
     width:30vw;
     height:6vh;
-    border:1px solid #CC3942;
+    /* border:1px solid #CC3942; */
     display: flex;
     align-items: center;
+    letter-spacing: 2px;
   }
 
   #skill_text > h2 {
@@ -633,10 +613,8 @@ body {
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
-
-
 
   #skillcircle_Box_01 > ul   {
     display: flex;
@@ -649,7 +627,6 @@ body {
     font-size: 13px;
   }
   
-
   #skillcircle_Box_01 > ul > li {
     width:40px;
     height:40px;
@@ -661,14 +638,13 @@ body {
     /* justify-content: center; */
   }
 
-
   #skillcircle_Box_02 {
     width:30vw;
     height:15vh;
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   #skillcircle_Box_02 > ul   {
@@ -681,7 +657,6 @@ body {
     color: white;
     font-size: 13px;
   }
-  
 
   #skillcircle_Box_02 > ul > li {
     width:40px;
@@ -693,8 +668,109 @@ body {
     /* align-items: center; */
     /* justify-content: center; */
   }
+
+  /***SKILL media section***/
   
+  @media screen and (max-width:768px) {
+    #profile {
+      flex-direction:column;
+      align-items: center;
+    }
+    #profile_image {
+      display: none;
+    }
+    #profile_info {
+      width:100vw;
+      height:40vh;
+      /* justify-content: flex-start; */
+      transition: 0.4s;
+      justify-content: center;
+      
+    }
+    #leftInfo {
+      width:50vw;
+      height:30vh;
+      transition: 0.4s;
+
+    }
+    #rightInfo {
+      width:100vw;
+      height:100vh;
+      transition: 0.4s;
+
+    }
+    #resume {
+      width:100vw;
+      height:30vh;
+      transition: 0.4s;
+      align-items: center;
+      /****여기***/
+
+    }
+    #resume h2{
+      line-height: 1px;
+      position: relative;
+      top:30px;
+    }
   
+    #resume > p {
+      font-size: 14px;
+      transition: 0.4s;
+      justify-content: center;
+      line-height: 20px;
+
+    }
+    
+    #profile_info_text {
+      padding:10px;
+      transition: 0.4s;
+
+    }
+
+    #profile_info_text > p {
+      line-height:1px;
+    }
+    
+    #profile_info_text p {
+      font-size: 14px;
+      transition: 0.4s;
+
+    }
+    #profile_info_text span {
+      font-size: 15px;
+      transition: 0.4s;
+
+
+    }
+    #skill {
+      width:100vw;
+      transition: 0.4s;
+
+    }
+    #skill_text {
+      width:100vw;
+      transition: 0.4s;
+      justify-content: center;
+      /***여기**/
+
+    }
+    #skillcircle_Box_01{
+      width:100vw;
+      transition: 0.4s;
+      justify-content: center;
+      height:9vh;
+
+
+    }
+    #skillcircle_Box_02 {
+      width:100vw;
+      transition: 0.4s;
+      justify-content: center;
+      height:9vh;
+
+    }
+
+  }
   
   
   
