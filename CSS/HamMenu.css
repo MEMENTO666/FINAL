@@ -6,7 +6,7 @@
   width:100%;
   background: linear-gradient(-135deg,#0c0c0c94, #3d3c3cc0);
   clip-path: circle(25px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
   backdrop-filter: blur(3px);
   display: flex;
   align-items: center;

@@ -2,15 +2,15 @@
 body {
   margin:0; padding:0; box-sizing: border-box;
   overflow-x: hidden;
+  
 }
-
-
 
 #container {
   width:100vw;
   height:400vh;
   display: flex;
   flex-direction: column;
+
 }
 
 
@@ -20,6 +20,7 @@ body {
   background-color: #211E1E;
   display: flex;
   flex-direction: column;
+
 }
 
 #header {
@@ -96,6 +97,7 @@ body {
   align-items: center;
   flex-direction: column;
   line-height: 10px;
+
 }
 
 #portfolioText {
@@ -109,8 +111,10 @@ body {
 }
 
 #portfolioText_3 {
-  font-size: 18px;
+  font-size: 20px;
   color: white;
+  font-family: 'Permanent Marker', cursive;
+
 }
 
 /********************** Intro media section  ********************/
