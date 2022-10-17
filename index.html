@@ -5,28 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/HamMenu.css"/>
+  <link rel="stylesheet" href="css/keyframes.css"/>
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  <script src="https://kit.fontawesome.com/aada43250b.js" crossorigin="anonymous"></script>
   <title>FINAL</title>
 </head>
 <body>
+  <!-- !햄버거 메뉴! -->
+  <input type="checkbox" id = "active">
+  <label for="active" class="menu-btn"><i class="fa-solid fa-bars"></i></label>
+  <div class="wrapper">
+    <ul class="menu">
+        <li><a href="#"><p>INTRO</p></a></li>
+        <li><a href="#"><p>PORTFOLIO-1</p></a></li>
+        <li><a href="#"><p>PORTFOLIO-2</p></a></li>
+        <li><a href="#"><p>PROFILE</p></a></li>
+        <li><a href="#"><p>???</p></a></li>
+    </ul>
+    </div>
+  
   
   <div id="container">
 
-    <!-- Intro section -->
+    <!-- ! Intro section -->
     <div id="intro">
-      <div id="header">
-        <div id="logoBox">
-          <div id="logoIcon"></div>
-        </div>
-        <div id="Menubox">
-          <ul id="MenuList">
+      <!-- <div id="header"> -->
+        <!-- <div id="logoBox"> -->
+          <!-- <div id="logoIcon"></div> -->
+        <!-- </div> -->
+        <!-- <div id="Menubox"> -->
+          <!-- <ul id="MenuList">
             <li>INTRO</li>
             <li>PORTFOLIO-1</li>
             <li>PORTFOLIO-2</li>
             <li>PROFILE</li>
             <li>CONTACT</li>
           </ul>
-        </div>
-      </div>
+        </div> --> 
+        <!-- for문으로 한번에 이벤트 주기...? -->
+      <!-- </div>  -->
       <div id="introText">
         <h1 id="portfolioText">PORTFOLIO</h1>
         <p id="portfolioText_2">UI & UX designer</p>
@@ -34,7 +52,7 @@
       </div>
     </div>
 
-    <!-- portfolio_01 section -->
+    <!-- ! portfolio_01 section -->
     <div id="portfolio_01">
       <div id="portfolio_imageBox_01">
         <div id="portfolio_image_01"></div>
@@ -82,7 +100,7 @@
       </div>
     </div>
 
-    <!-- portfolio_02 section -->
+    <!-- ! portfolio_02 section -->
     <div id="portfolio_02">
       <div id="portfolio_imageBox_02">
         <div id="portfolio_image_02"></div>
@@ -130,7 +148,7 @@
       </div>
     </div>
 
-    <!-- profile section -->
+    <!-- ! profile section -->
     <div id="profile">
       <div id="leftInfo">
         <div id="profile_image">
@@ -155,33 +173,33 @@
           <div id="skill_text"><h2>SKILL</h2></div>
           <div id="skillcircle_Box_01">
             <ul>
-              <li></li>
+              <li><iconify-icon icon="akar-icons:html-fill" style="color: rgb(255, 255, 255);" width="35" height="35"></iconify-icon></li>
               <p>HTML</p>
             </ul>
             <ul>
-              <li></li>
+              <li><iconify-icon icon="akar-icons:css-fill" style="color: white;" width="35" height="35"></iconify-icon></li>
               <p>CSS</p>
             </ul>
             <ul>
-              <li></li>
+              <li><iconify-icon icon="tabler:brand-javascript" style="color: white;" width="35" height="35"></iconify-icon></li>
               <p>Javascript</p>
             </ul>
             <ul>
-              <li></li>
+              <li><iconify-icon icon="ei:sc-github" style="color: white;" width="45" height="45"></iconify-icon></li>
               <p>Github</p>
             </ul>
           </div>
           <div id="skillcircle_Box_02">
             <ul>
-              <li></li>
+              <li><iconify-icon icon="icon-park-solid:adobe-illustrate" style="color: white;" width="30" height="30"></iconify-icon></li>
               <p>Ai</p>
             </ul>
             <ul>
-              <li></li>
+              <li><iconify-icon icon="icon-park-outline:adobe-photoshop" style="color: white;" width="30" height="30"></iconify-icon></li>
               <p>Ps</p>
             </ul>
             <ul>
-              <li></li>
+              <li><iconify-icon icon="akar-icons:figma-fill" style="color: white;" width="30" height="30"></iconify-icon></li>
               <p>Figma</p>
             </ul>
           </div>
@@ -197,6 +215,9 @@
 
 
   <script src="JS/intro.js"></script>
+  <script src="JS/portFolio.js"></script>
+  <script src="Asset/asset/"></script>
+  
   
   
 </body>
