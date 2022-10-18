@@ -1,9 +1,24 @@
 
+  @font-face {
+    font-family: "yoon";
+    font-style:normal;
+    font-weight: bold;
+    src: url(../Asset/yoongothic360.ttf)
+  }
+
+  
+  @font-face {
+    font-family: "helvetica";
+    font-style: normal;
+    src: url(../Asset/Helvetica.ttf)
+  }
+
+
 body {
   margin:0; padding:0; box-sizing: border-box;
   overflow-x: hidden;
-  
 }
+
 
 #container {
   width:100vw;
@@ -97,12 +112,12 @@ body {
   align-items: center;
   flex-direction: column;
   line-height: 10px;
-
 }
 
 #portfolioText {
   font-size: 40px;
   color: white;
+  font-family: "helvetica";
 }
 
 #portfolioText_2 {
@@ -114,7 +129,6 @@ body {
   font-size: 20px;
   color: white;
   font-family: 'Permanent Marker', cursive;
-
 }
 
 /********************** Intro media section  ********************/
@@ -129,7 +143,7 @@ body {
     transition: 0.5s;
   }
 }
-/************************ protfolio_01 section *********************/
+/*************** protfolio_01 section ***************/
 
 #portfolio_01 {
   width:100vw;
@@ -140,9 +154,9 @@ body {
 }
 
 #portfolio_imageBox_01 {
-  width:70vw;
+  width:75vw;
   height:100vh;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,23 +165,39 @@ body {
 }
 
 #portfolio_image_01 {
-  width:45vw;
-  height:40vh;
-  background-color: #4E4E4E;
+  width:600px;
+  height:500px;
+  /* background-color: #4E4E4E; */
   border-radius: 20px;
-  cursor: pointer;
   transition: 0.4s;
-  
+  background-image: url(../Asset/Imac.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio_image_01 > div {
+  width:92%;
+  height:315px;
+  /* background-color: rgb(196, 71, 71); */
+  position: relative;
+  bottom: 78px;
+  background-image: url(../Asset/SKY.jpg);
+  cursor: pointer;
 }
 
 #portfolio_image_button_01 {
-  width:45vw;
+  width:550px;
   height:8vh;
   /* border: 1px solid red; */
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+  bottom: 120px;
 }
 
 #web_01 {
@@ -200,7 +230,7 @@ body {
 }
 
 #portfolio_detail_01 {
-  width:30vw;
+  width:25vw;
   height:100vh;
   background-color: white;
   display: flex;
@@ -211,7 +241,7 @@ body {
   position: absolute;
   right: 0;
   animation: slide 1.5s ease-in-out;
-
+  font-family: "helvetica";
 }
 
 #portfolio_detail_01 > div {
@@ -277,22 +307,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
+
   #portfolio_imageBox_01 {
-    width:400px;
-    height:300px;
+    width:450px;
+    height:400px;
     margin-bottom: 50px;
     padding:20px;
     transition: 0.4s;
-
   }
+
   #portfolio_image_01 {
     width:350px;
     height:250px;
     transition: 0.4s;
-
   }
+
+  #portfolio_image_01 > div {
+    width:93%;
+    height:60%;
+    bottom: 30px;
+  }
+
   #portfolio_detail_01 {
     width:100%;
     flex-wrap: wrap;
@@ -301,20 +337,22 @@ body {
     justify-content: space-evenly;
     transition: 0.4s;
     position: unset;
-
   }
+
   #portfolio_detail_01 > div > p {
     font-size: 14px;
     transition: 0.4s;
-
   }
+
   #portfolio_image_button_01 {
     margin-left: 120px;
     transition: 0.4s;
-
+    right:150px;
+    bottom:80px;
   }
+
   #portfolio_image_button_01 > div {
-    width:60px;
+    width:50px;
     height:40px;
     font-size: 11px;
     transition: 0.4s;
@@ -334,33 +372,62 @@ body {
 #portfolio_imageBox_02 {
   width:70vw;
   height:100vh;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: 0.4s;
-  
 }
 
 #portfolio_image_02 {
-  width:45vw;
-  height:40vh;
-  background-color: #4E4E4E;
+  width:550px;
+  height:500px;
+  /* background-color: #4E4E4E; */
   border-radius: 20px;
-  cursor: pointer;
   transition: 0.4s;
+  background-image: url(../Asset/Imac.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio_image_02 {
+  width:600px;
+  height:500px;
+  /* background-color: #4E4E4E; */
+  border-radius: 20px;
+  transition: 0.4s;
+  background-image: url(../Asset/Imac.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio_image_02 > div {
+  width:92%;
+  height:315px;
+  /* background-color: rgb(196, 71, 71); */
+  position: relative;
+  bottom: 78px;
+  background-image: url(../Asset/SKY.jpg);
+  cursor: pointer;
 }
 
 #portfolio_image_button_02 {
-  width:45vw;
+  width:550px;
   height:8vh;
   /* border: 1px solid red; */
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  transition: 0.4s;
+  position: relative;
+  bottom: 120px;
 }
 
 #web_02 {
@@ -395,7 +462,7 @@ body {
 }
 
 #portfolio_detail_02 {
-  width:30vw;
+  width:25vw;
   height:100vh;
   background-color: white;
   display: flex;
@@ -406,10 +473,10 @@ body {
   position: absolute;
   right: 0;
   animation: slide 1.5s ease-in-out;
-
+  font-family: "helvetica";
 }
 
-#portfolio_detail_02> div {
+#portfolio_detail_02 > div {
   width:200px;
   height:80px;
   display: flex;
@@ -476,16 +543,27 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   #portfolio_imageBox_02 {
-    width:400px;
-    height:300px;
+    width:450px;
+    height:400px;
     margin-bottom: 50px;
     padding:20px;
+    transition: 0.4s;
   }
+
   #portfolio_image_02 {
     width:350px;
     height:250px;
+    transition: 0.4s;
   }
+
+  #portfolio_image_02 > div {
+    width:93%;
+    height:60%;
+    bottom: 30px;
+  }
+
   #portfolio_detail_02 {
     width:100%;
     flex-wrap: wrap;
@@ -495,18 +573,24 @@ body {
     position: unset;
     animation: slide 1s;
   }
+
   #portfolio_detail_02 > div > p {
     font-size: 14px;
   }
+ 
   #portfolio_image_button_02 {
     margin-left: 120px;
+    transition: 0.4s;
+    right:150px;
+    bottom:80px;
   }
+
   #portfolio_image_button_02 > div {
-    width:60px;
+    width:50px;
     height:40px;
     font-size: 11px;
-  }
-}
+    transition: 0.4s;
+  }}
 
 /* **************profile section********* */
 
@@ -564,7 +648,7 @@ body {
   }
 
   #profile_info_text > li {
-    /* list-style: none; */
+    list-style: none;
     color: #c0c0c0;
     font-size: 15px;
     /* border: 1px solid red; */
@@ -575,8 +659,6 @@ body {
     color: #c0c0c0;
     font-size: 15px;
   }
-
-
 
   #rightInfo {
     width:30vw;
@@ -603,7 +685,6 @@ body {
     padding: 10px;
     color: white;
     letter-spacing: 2px;
-
   }
 
   #resume p {
@@ -636,8 +717,6 @@ body {
     justify-content: flex-start;
     display: flex;
     letter-spacing: 2px;
-
-
   }
 
   #skillcircle_Box_01 {
@@ -649,7 +728,7 @@ body {
     /* border: 1px solid white; */
   }
 
-  #skillcircle_Box_01 > ul   {
+  #skillcircle_Box_01 > ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -682,8 +761,6 @@ body {
   transition: 1s;
   }
 
-
-
   #skillcircle_Box_02 {
     width:30vw;
     height:15vh;
@@ -693,7 +770,7 @@ body {
     /* border: 1px solid hotpink; */
   }
 
-  #skillcircle_Box_02 > ul   {
+  #skillcircle_Box_02 > ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -825,4 +902,3 @@ body {
     }
   };
 
-  

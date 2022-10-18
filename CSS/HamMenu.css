@@ -44,9 +44,12 @@
 
 #active:checked ~ .menu-btn i:before {
   content: "\f00d";
+
 }
 
-
+.menu > li > a{
+  height:60px;
+}
 
 .wrapper ul {
   /* position: absolute; */
@@ -60,6 +63,7 @@
   align-items: center;
   padding: 0;
   justify-content: center;
+
   
 }
 
@@ -72,16 +76,17 @@
 .wrapper ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
+  font-size:50px;
+  /* font-weight: bold; */
   /* padding: 5px 50px; */
   /* position: relative; */
   line-height: 1px;
   transition: all 0.3s ease;
-  letter-spacing: 5px;
+  letter-spacing: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "helvetica";
 }
 
 .wrapper ul li a:after {
@@ -102,6 +107,8 @@
 
 .wrapper ul li a:hover:after {
   transform: scaleX(1);
+  transition: 1.5s;
+
 }
 
 /* .wrapper ul li a:hover {
