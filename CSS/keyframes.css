@@ -37,12 +37,3 @@
       box-shadow: none;
     }
   }
-
-  @keyframes bounce {
-    from {
-      top:10px;
-    }
-    to {
-    bottom:-10px;
-  }
-  };
