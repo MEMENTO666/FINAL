@@ -83,3 +83,5 @@ window.addEventListener("mousewheel", () => {
 
   lastScrollValue = value;
 });
+
+//! 페이지 최 하단에 도달한 후 마우스 휠을 아래로 굴려도 상단으로 올라감.
