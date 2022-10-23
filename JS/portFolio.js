@@ -1,11 +1,21 @@
 //let portFolio1 = document.getElementById("portfolio_detail_01");
 
-const pagePositions = [
-  document.getElementById('intro').offsetTop,
-  document.getElementById('portfolio_01').offsetTop,
-  document.getElementById('portfolio_02').offsetTop,
-  document.getElementById('profile').offsetTop
+const pageObjs = [
+  document.getElementById('intro'),
+  document.getElementById('portfolio_01'),
+  document.getElementById('portfolio_02'),
+  document.getElementById('profile'),
 ];
+
+const detailMenus = [
+  document.getElementById('portfolio_detail_01'),
+  document.getElementById('portfolio_detail_02'),
+];
+
+const pagePositions = pageObjs.map((p) => {
+  return p.offsetTop;
+});
+
 console.log('section Y positions = ', pagePositions);
 
 // 스크롤에 의해 이동된 현재 페이지 HTML오브젝트를 가리킬 index 변수
@@ -27,6 +37,19 @@ const moveScroll = (yPosition) => {
   window.scrollTo({ top: yPosition, behavior: 'smooth' });
 }
 
+const pageIndexChanged = (pageIndex) => {
+  console.log('######## index = ', pageIndex);
+  
+  detailMenus[0].style.display = 'none';
+  detailMenus[1].style.display = 'none';
+
+  if(pageIndex === 1) {
+    detailMenus[0].style.display = 'flex';
+  } else if(pageIndex === 2) {
+    detailMenus[1].style.display = 'flex';
+  }
+}
+
 const onScrollDown = () => {
   if(currentPageIndex === pageIndexMax) { 
     return;
@@ -35,6 +58,7 @@ const onScrollDown = () => {
   console.log('current page idx = ', currentPageIndex);
   
   moveScroll(pagePositions[currentPageIndex]);
+  pageIndexChanged(currentPageIndex);
 }
 
 const onScrollUp = () => {
@@ -45,6 +69,7 @@ const onScrollUp = () => {
   console.log('current page idx = ', currentPageIndex);
 
   moveScroll(pagePositions[currentPageIndex]);
+  pageIndexChanged(currentPageIndex);
 }
 
 const delayMs = 500;
@@ -55,10 +80,10 @@ let throttleClosed = false;
 // 휠 굴렸을 때만 호출되는 wheel 이벤트가 더 나을듯 보임
 window.addEventListener("mousewheel", () => {
   const value = document.documentElement.scrollTop;
-  console.log('current scroll value = ', value);
+  //console.log('current scroll value = ', value);
 
   if(throttleClosed === true) {
-    console.log(`#### 스로틀을 닫아 잠시 이벤트 처리를 막아놓은 상태, 이벤트는 ${delayMs}ms 단위로만 처리됩니다`);
+    //console.log(`#### 스로틀을 닫아 잠시 이벤트 처리를 막아놓은 상태, 이벤트는 ${delayMs}ms 단위로만 처리됩니다`);
     return;
   }
   
