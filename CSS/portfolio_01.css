@@ -1,0 +1,213 @@
+#portfolio_01 {
+  width:100vw;
+  height:100vh;
+  background-color: #211E1E;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+
+#portfolio_imageBox_01 {
+  width:75vw;
+  height:100vh;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.4s;
+}
+
+#portfolio_image_01 {
+  width:600px;
+  height:500px;
+  /* background-color: #4E4E4E; */
+  border-radius: 20px;
+  transition: 0.4s;
+  background-image: url(../Asset/Imac.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio_image_01 > div {
+  width:92%;
+  height:315px;
+  /* background-color: rgb(196, 71, 71); */
+  position: relative;
+  bottom: 78px;
+  background-image: url(../Asset/SKY.jpg);
+  cursor: pointer;
+}
+
+#portfolio_image_button_01 {
+  width:550px;
+  height:8vh;
+  /* border: 1px solid red; */
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 120px;
+}
+
+#web_01 {
+  width:70px;
+  height:50px;
+  background-color: rgb(47, 47, 201);
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#design_01 {
+  width:70px;
+  height:50px;
+  background-color: rgb(23, 214, 97);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#portfolio_detail_01 {
+  width:25vw;
+  height:100vh;
+  background-color: white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.4s;
+  position: absolute;
+  right: 0;
+  animation: slide 1.5s ease-in-out;
+  font-family: "helvetica";
+}
+
+#portfolio_detail_01 > div {
+  width:200px;
+  height:80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  flex-direction: column;
+  line-height: 10px;
+  color:#444444;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+#portfolio_detail_01 > div > p {
+  font-size: 15px;
+}
+
+#colorBox_01 {
+  width:200px;
+  height:30px;
+  /* background-color: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorBox_01 > div {
+  width:20px;
+  height:20px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+#colorBox_01 > div:nth-child(1) {
+  background-color: #4D0DD6;
+}
+
+#colorBox_01 > div:nth-child(2) {
+  background-color: #CC3942;
+}
+
+#colorBox_01 > div:nth-child(3) {
+  background-color: #d1ce23;
+}
+
+#portfolio_detail_01 > div:nth-child(5) {
+  width:200px;
+  height:160px;
+}
+
+#portfolio_detail_01 > div:nth-child(6) {
+  width:200px;
+  height:130px;
+}
+
+/* *********portfolio_01 media section*******/
+
+@media screen and (max-width:768px) {
+  #portfolio_01 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #portfolio_imageBox_01 {
+    width:450px;
+    height:400px;
+    margin-bottom: 50px;
+    padding:20px;
+    transition: 0.4s;
+  }
+
+  #portfolio_image_01 {
+    width:350px;
+    height:250px;
+    transition: 0.4s;
+  }
+
+  #portfolio_image_01 > div {
+    width:93%;
+    height:60%;
+    bottom: 30px;
+  }
+
+  #portfolio_detail_01 {
+    width:100%;
+    flex-wrap: wrap;
+    z-index: 1;
+    height:50%;
+    justify-content: space-evenly;
+    transition: 0.4s;
+    position: unset;
+  }
+
+  #portfolio_detail_01 > div > p {
+    font-size: 14px;
+    transition: 0.4s;
+  }
+
+  #portfolio_image_button_01 {
+    margin-left: 120px;
+    transition: 0.4s;
+    right:150px;
+    bottom:80px;
+  }
+
+  #portfolio_image_button_01 > div {
+    width:50px;
+    height:40px;
+    font-size: 11px;
+    transition: 0.4s;
+  }
+}

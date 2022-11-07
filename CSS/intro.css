@@ -1,0 +1,112 @@
+#intro {
+  width:100vw;
+  height:100vh;
+  background-color: #211E1E;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#header {
+  width:100vw;
+  display: flex;
+  /* position: fixed; */
+}
+
+#logoBox {
+  width:10vw;
+  /* border: 1px solid white; */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logoIcon {
+  width:45px;
+  height:45px;
+  /* background-color: white; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* #Menubox {
+  width:90vw;
+  height:60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* #MenuList {
+  display: flex;
+  justify-content:space-around;
+  width:100%;
+  font-weight: bold;
+  position: relative;
+} */
+
+/* #MenuList > li {
+  list-style: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+} */
+
+/*** header menu underline section ****/
+
+ /* #MenuList > li::after {
+  content: "";
+  height:3px;
+  width:0px;
+  background-color: #CC3942;
+  transition: 0.3s;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  border-radius: 50%;
+}
+
+#MenuList > li:hover::after {
+  width:100%;
+} */
+
+#introText {
+  width:100%;
+  height:100vh;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 10px;
+}
+
+#portfolioText {
+  font-size: 40px;
+  color: white;
+  font-family: "helvetica";
+}
+
+#portfolioText_2 {
+  font-size: 18px;
+  color: white;
+}
+
+#portfolioText_3 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+@media screen and (max-width:768px) {
+  #MenuList {
+    justify-content: space-evenly;
+  }
+
+  #MenuList > li {
+    font-size: 11px;
+    transition: 0.5s;
+  }
+}
