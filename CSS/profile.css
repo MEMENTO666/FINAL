@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "helvetica";
   }
+
 
   #leftInfo {
     width:30vw;
@@ -259,7 +259,7 @@
       font-size: 14px;
       transition: 0.4s;
       justify-content: center;
-      line-height: 20px;
+      line-height: 40px;
     }
     
     #profile_info_text {

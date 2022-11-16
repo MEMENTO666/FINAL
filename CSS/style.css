@@ -1,9 +1,4 @@
 
-  @font-face {
-    font-family: "helvetica";
-    font-style: normal;
-    src: url(../Asset/Helvetica.ttf)
-  }
 
 body {
   margin:0; padding:0; box-sizing: border-box;
@@ -16,6 +11,7 @@ body {
   height:400vh;
   display: flex;
   flex-direction: column;
+  background-color: #211E1E;
 
 }
 

@@ -1,4 +1,4 @@
-#portfolio_02 {
+#portfolio_03 {
   width: 100vw;
   height: 100vh;
   background-color: #211e1e;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-#portfolio_imageBox_02 {
+#portfolio_imageBox_03 {
   width: 75vw;
   height: 100vh;
   /* border: 1px solid white; */
@@ -18,7 +18,7 @@
   transition: 0.2s;
 }
 
-#portfolio_image_02 {
+#portfolio_image_03 {
   width: 800px;
   height: 600px;
   /* background-color: #4E4E4E; */
@@ -34,7 +34,7 @@
 
 }
 
-#portfolio_image_02 > div {
+#portfolio_image_03 > div {
   width: 95%;
   height: 75%;
   position: absolute;
@@ -43,17 +43,17 @@
   top: 20px;
 }
 
-#portfolio_image_02 > div > img {
+#portfolio_image_03 > div > img {
   width: 100%;
 }
 
-#portfolio_image_02 > div > img:hover {
+#portfolio_image_03 > div > img:hover {
   transform: translateY(-85%);
   top: 100%;
   transition: 20s ease-out;
 }
 
-#portfolio_image_button_02 {
+#portfolio_image_button_03 {
   width: 550px;
   height: 8vh;
   /* border: 1px solid red; */
@@ -69,7 +69,7 @@
   font-family: "Lato", sans-serif;
 }
 
-#web_02 {
+#web_03 {
   width: 60px;
   height: 40px;
   background-color: rgb(37, 52, 139);
@@ -82,7 +82,7 @@
   cursor: pointer;
 }
 
-#design_02 {
+#design_03 {
   width: 60px;
   height: 40px;
   background-color: rgb(236, 240, 238);
@@ -93,7 +93,7 @@
   cursor: pointer;
 }
 
-#portfolio_detail_02 {
+#portfolio_detail_03 {
   width: 30vw;
   height: 100vh;
   background-color: white;
@@ -105,7 +105,7 @@
   font-family: "Lato", sans-serif;
 }
 
-#portfolio_detail_02 > div {
+#portfolio_detail_03 > div {
   width: 200px;
   height: 80px;
   display: flex;
@@ -118,17 +118,17 @@
   margin: 10px;
 }
 
-#portfolio_detail_02 > div > p {
+#portfolio_detail_03 > div > p {
   font-size: 15px;
 }
 
-#titleText_Box_02 {
+#titleText_Box_03 {
   font-weight: bold;
   font-style: italic;
 }
 
 
-#colorBox_02 {
+#colorBox_03 {
   width: 200px;
   height: 30px;
   /* background-color: gray; */
@@ -137,117 +137,120 @@
   justify-content: center;
 }
 
-#colorBox_02 > div {
+#colorBox_03 > div {
   width: 20px;
   height: 20px;
   margin: 5px;
   border-radius: 50%;
 }
 
-#colorBox_02 > div:nth-child(1) {
-  background-color: rgba(253, 155, 0, 1);
+#colorBox_03 > div:nth-child(1) {
+  background-color: #4d0dd6;
 }
 
-#colorBox_02 > div:nth-child(2) {
-  background-color: #15151a;
+#colorBox_03 > div:nth-child(2) {
+  background-color: #cc3942;
 }
 
+#colorBox_03 > div:nth-child(3) {
+  background-color: #d1ce23;
+}
 
-#portfolio_detail_02 > div:nth-child(5) {
+#portfolio_detail_03 > div:nth-child(5) {
   width: 150px;
   height: 150px;
 }
 
-#portfolio_detail_02 > div:nth-child(6) {
+#portfolio_detail_03 > div:nth-child(6) {
   width: 150px;
   height: 120px;
 }
 
-/* *********portfolio_02 media section*******/
+/* *********portfolio_03 media section*******/
 
 @media screen and (max-width: 1100px) {
-  #portfolio_imageBox_02 {
+  #portfolio_imageBox_03 {
     width: 75vw;
     height: 100vh;
     transition: 0.4s;
   }
 
-  #portfolio_image_02 {
+  #portfolio_image_03 {
     width: 650px;
     height: 600px;
   }
 
-  #portfolio_image_02 > div {
+  #portfolio_image_03 > div {
     width: 93%;
     height: 71%;
     top: 35px;
   }
 
 
-  #portfolio_image_button_02 {
+  #portfolio_image_button_03 {
     bottom: 120px;
     left: 10px;
     transition: 0.5s;
   }
 
 
-  #portfolio_detail_02 {
+  #portfolio_detail_03 {
     width: 25vw;
   }
 }
 
 
 @media screen and (max-width: 768px) {
-  #portfolio_02 {
+  #portfolio_03 {
     flex-direction: column;
     align-items: center;
   }
 
-  #portfolio_imageBox_02 {
+  #portfolio_imageBox_03 {
     width: 500px;
     height: 500px;
     transition: 0.4s;
   }
 
-  #portfolio_image_02 {
+  #portfolio_image_03 {
     width: 450px;
     height: 500px;
     transition: 0.4s;
   }
 
-  #portfolio_image_02 > div {
+  #portfolio_image_03 > div {
     width: 90%;
     height: 71%;
     top: 22px;
   }
 
-  #portfolio_detail_02 {
+  #portfolio_detail_03 {
     width: 100vw;
     flex-wrap: wrap;
     z-index: 1;
     height: 45vh;
   }
 
-  #portfolio_detail_02 > div {
+  #portfolio_detail_03 > div {
     width: 200px;
     height: 80px;
     margin: 0px;
 
   }
 
-  #portfolio_detail_02 > div > p {
+  #portfolio_detail_03 > div > p {
     font-size: 14px;
     transition: 0.4s;
   }
 
-  #portfolio_image_button_02 {
+  #portfolio_image_button_03 {
     display: flex;
     align-items: center;
     justify-content: center;
     position: unset;
   }
 
-  #titleText_Box_02 {
+  #titleText_Box_03 {
     text-align: center;
   }
 
