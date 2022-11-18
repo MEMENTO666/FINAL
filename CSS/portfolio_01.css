@@ -34,7 +34,7 @@
 }
 
 #portfolio_image_01 > div {
-  width: 95%;
+  width: 100%;
   height: 75%;
   position: absolute;
   cursor: pointer;
@@ -49,7 +49,7 @@
 #portfolio_image_01 > div > img:hover {
   transform: translateY(-85%);
   top: 100%;
-  transition: 20s ease-out;
+  transition: 8s ease-out;
 }
 
 #portfolio_image_button_01 {
@@ -63,9 +63,10 @@
   position: relative;
   bottom: 120px;
   left: 100px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   font-family: "Lato", sans-serif;
+  font-style: italic;
 }
 
 #web_01 {
@@ -120,7 +121,7 @@
   font-size: 15px;
 }
 
-#titleText_Box_01 {
+#titleText_Box_01 > p {
   font-weight: bold;
   font-style: italic;
 }
@@ -164,6 +165,41 @@
   height: 120px;
 }
 
+#imageBox-mobile_01 {
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  left: 90px;
+  z-index: 999;
+  background-image: url(../Asset/mockup02.png);
+  /* background-position: center; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imageBox-mobile_01 > div {
+  width: 89%;
+  height: 95%;
+  border-radius: 20px;
+  position: absolute;
+  overflow: hidden;
+}
+
+#imageBox-mobile_01 > div > img {
+  width: 100%;
+}
+
+#imageBox-mobile_01 > div > img:hover {
+  transform: translateY(-85%);
+  top: 100%;
+  transition: 5s ease-out;
+  cursor: pointer;
+}
+
+
+
 /* *********portfolio_01 media section*******/
 
 @media screen and (max-width: 1100px) {
@@ -179,9 +215,8 @@
   }
 
   #portfolio_image_01 > div {
-    width: 93%;
-    height: 71%;
-    top: 35px;
+    height: 76%;
+    top: 20px;
   }
 
   #portfolio_image_button_01 {
@@ -193,37 +228,50 @@
   #portfolio_detail_01 {
     width: 25vw;
   }
+
+  #imageBox-mobile_01{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   #portfolio_01 {
     flex-direction: column;
     align-items: center;
+    padding-top: 5%;
   }
 
   #portfolio_imageBox_01 {
     width: 500px;
-    height: 500px;
+    height: 450px;
     transition: 0.4s;
   }
 
   #portfolio_image_01 {
-    width: 450px;
-    height: 500px;
+    width: 550px;
+    height: 300px;
     transition: 0.4s;
+    background-image: none;
+    border-radius: 20px;
+    padding-right: 5%;
+
   }
 
   #portfolio_image_01 > div {
-    width: 90%;
-    height: 71%;
+    width: 80%;
+    height: 100%;
     top: 22px;
+    border-radius: 20px;
+
   }
 
   #portfolio_detail_01 {
     width: 100vw;
     flex-wrap: wrap;
     z-index: 1;
-    height: 45vh;
+    height: 50vh;
+    justify-content: space-evenly;
+
   }
 
   #portfolio_detail_01 > div {
@@ -247,4 +295,17 @@
   #titleText_Box_01 {
     text-align: center;
   }
+
+  #web_01 {
+    width: 100px;
+  }
+  
+  #design_01 {
+    width:100px;
+  }
+
+  #imageBox-mobile_01 {
+    display: none;
+  }
+  
 }

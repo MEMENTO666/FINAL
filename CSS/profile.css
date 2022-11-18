@@ -1,309 +1,336 @@
+#profile {
+  width: 100vw;
+  height: 100vh;
+  /* border: 1px solid blue; */
+  background-color: #211e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#leftInfo {
+  width: 30vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+}
+
+/** 프로필 circle box **/
+#profile_image {
+  width: 30vw;
+  height: 40vh;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** 프로필 사진 첨부 **/
+#profile_image > div {
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  background-image: url(../Asset/profile2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+#profile_image > div::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: linear-gradient(90deg, #ffffff65, #2a0230, #574e01, #000000);
+  background-size: 400%;
+  z-index: -1;
+  animation: anim 8s linear infinite;
+  border-radius: 5px;
+}
+
+#profile_image > div::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: linear-gradient(90deg, #ffffff65, #2a0230, #574e01, #000000);
+  background-size: 400%;
+  z-index: -2;
+  animation: anim 8s linear infinite;
+  border-radius: 5px;
+  filter: blur(1rem);
+}
+
+@keyframes anim {
+  from {background-position: 0}
+  to {background-position: 400%}
+}
+
+
+
+/**이름,연도,연락처 등등**/
+#profile_info {
+  width: 30vw;
+  height: 40vh;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+#profile_info_text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#profile_info_text > li {
+  list-style: none;
+  color: #c0c0c0;
+  font-size: 15px;
+  /* border: 1px solid red; */
+}
+
+#profile_info_text > p {
+  /* list-style: none; */
+  color: #c0c0c0;
+  font-size: 15px;
+}
+
+#rightInfo {
+  width: 30vw;
+  height: 80vh;
+  /* border:1px solid rgb(255, 0, 221); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume {
+  width: 30vw;
+  height: 40vh;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+#resume h2 {
+  padding: 10px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#resume p {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/** SKILL 아이콘 첨부 **/
+#skill {
+  width: 30vw;
+  height: 40vh;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+}
+
+#skill_text {
+  width: 30vw;
+  height: 6vh;
+  /* border:1px solid #CC3942; */
+  display: flex;
+  align-items: center;
+}
+
+#skill_text > h2 {
+  padding: 10px;
+  color: white;
+  justify-content: flex-start;
+  display: flex;
+  letter-spacing: 2px;
+}
+
+#skillcircle_Box_01 {
+  width: 30vw;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+
+#skillcircle_Box_01 > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+}
+
+#skillcircle_Box_01 > ul > li {
+  width: 40px;
+  height: 40px;
+  /* background-color: rgb(150, 144, 144); */
+  border-radius: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skillcircle_Box_01 > ul > li:hover {
+  box-shadow: 0 0 4px #fff, 0 0 10px rgb(217, 225, 226), 0 0 10px #e7eaeb,
+    0 0 10px #eef2f3, 0 0 12px #e2e4eb, 0 0 5px #ffffff;
+  transition: 1s;
+}
+
+#skillcircle_Box_02 {
+  width: 30vw;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 1px solid hotpink; */
+}
+
+#skillcircle_Box_02 > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2px;
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+#skillcircle_Box_02 > ul > li {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skillcircle_Box_02 > ul > li:hover {
+  box-shadow: 0 0 4px #fff, 0 0 10px rgb(217, 225, 226), 0 0 10px #e7eaeb,
+    0 0 10px #eef2f3, 0 0 12px #e2e4eb, 0 0 5px #ffffff;
+  transition: 1s;
+}
+
+/***SKILL media section***/
+
+@media screen and (max-width: 768px) {
   #profile {
-    width:100vw;
-    height:100vh;
-    /* border: 1px solid blue; */
-    background-color: #211E1E;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
+  #profile_image {
+    display: none;
+  }
+
+  #profile_info {
+    width: 100vw;
+    height: 35vh;
+    /* justify-content: flex-start; */
+    transition: 0.4s;
+    justify-content: center;
+  }
 
   #leftInfo {
-    width:30vw;
-    height:80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid white; */
-  }
-
-  /** 프로필 circle box **/
-  #profile_image {
-    width:30vw;
-    height:40vh;
-    /* border: 1px solid yellow; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /** 프로필 사진 첨부 **/
-  #profile_image > div {
-    width:200px;
-    height:200px;
-    border-radius: 50%;
-    background-color: white;
-  }
-  
-  /**이름,연도,연락처 등등**/
-  #profile_info {
-    width:30vw;
-    height:40vh;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-  }
-
-  #profile_info_text {
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-  }
-
-  #profile_info_text > li {
-    list-style: none;
-    color: #c0c0c0;
-    font-size: 15px;
-    /* border: 1px solid red; */
-  }
-
-  #profile_info_text > p {
-    /* list-style: none; */
-    color: #c0c0c0;
-    font-size: 15px;
+    width: 50vw;
+    height: 30vh;
+    transition: 0.4s;
   }
 
   #rightInfo {
-    width:30vw;
-    height:80vh;
-    /* border:1px solid rgb(255, 0, 221); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    height: 45vh;
+    transition: 0.4s;
+    /* border: 1px solid green; */
   }
 
   #resume {
-    width:30vw;
-    height:40vh;
-    /* border: 1px solid white; */
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 30px;
+    width: 100vw;
+    height: 30vh;
+    transition: 0.4s;
+    align-items: center;
+    /****여기***/
   }
 
   #resume h2 {
-    padding: 10px;
-    color: white;
-    letter-spacing: 2px;
+    line-height: 1px;
+    position: relative;
+    top: 30px;
   }
 
-  #resume p {
-    padding: 10px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
+  #resume > p {
+    font-size: 14px;
+    transition: 0.4s;
+    justify-content: center;
+    line-height: 40px;
   }
-  
-  /** SKILL 아이콘 첨부 **/
+
+  #profile_info_text {
+    padding-left: 14%;
+    transition: 0.4s;
+  }
+
+  #profile_info_text > p {
+    line-height: 1px;
+    font-size: 14px;
+    transition: 0.4s;
+  }
+
+  #profile_info_text span {
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
   #skill {
-    width: 30vw;
-    height:40vh;
-    /* border: 1px solid yellow; */
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    transition: 0.4s;
   }
 
   #skill_text {
-    width:30vw;
-    height:6vh;
-    /* border:1px solid #CC3942; */
-    display: flex;
-    align-items: center;
-  }
-
-  #skill_text > h2 {
-    padding: 10px;
-    color: white;
-    justify-content: flex-start;
-    display: flex;
-    letter-spacing: 2px;
+    width: 100vw;
+    transition: 0.4s;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    /***여기**/
   }
 
   #skillcircle_Box_01 {
-    width:30vw;
-    height:15vh;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    /* border: 1px solid white; */
-  }
-
-  #skillcircle_Box_01 > ul {
-    display: flex;
-    align-items: center;
+    width: 100vw;
+    transition: 0.4s;
     justify-content: center;
-    flex-direction: column;
-    line-height: 2px;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-  }
-  
-  #skillcircle_Box_01 > ul > li {
-    width:40px;
-    height:40px;
-    /* background-color: rgb(150, 144, 144); */
-    border-radius: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #skillcircle_Box_01 > ul > li:hover {
-  box-shadow:
-  0 0 4px #fff,
-  0 0 10px rgb(217, 225, 226),
-  0 0 10px #e7eaeb,
-  0 0 10px #eef2f3,
-  0 0 12px #e2e4eb,
-  0 0 5px #ffffff;
-  transition: 1s;
+    height: 9vh;
   }
 
   #skillcircle_Box_02 {
-    width:30vw;
-    height:15vh;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    /* border: 1px solid hotpink; */
-  }
-
-  #skillcircle_Box_02 > ul {
-    display: flex;
-    align-items: center;
+    width: 100vw;
+    transition: 0.4s;
     justify-content: center;
-    flex-direction: column;
-    line-height: 2px;
-    padding: 10px;
-    color: white;
-    font-size: 13px;
+    height: 9vh;
   }
-
-  #skillcircle_Box_02 > ul > li {
-    width:40px;
-    height:40px;
-    border-radius: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #skillcircle_Box_02 > ul > li:hover {
-    box-shadow:
-    0 0 4px #fff,
-    0 0 10px rgb(217, 225, 226),
-    0 0 10px #e7eaeb,
-    0 0 10px #eef2f3,
-    0 0 12px #e2e4eb,
-    0 0 5px #ffffff;
-    transition: 1s;
-    }
-
-  /***SKILL media section***/
-  
-  @media screen and (max-width:768px) {
-    #profile {
-      flex-direction:column;
-      align-items: center;
-    }
-
-    #profile_image {
-      display: none;
-    }
-
-    #profile_info {
-      width:100vw;
-      height:35vh;
-      /* justify-content: flex-start; */
-      transition: 0.4s;
-      justify-content: center;
-    }
-
-    #leftInfo {
-      width:50vw;
-      height:30vh;
-      transition: 0.4s;
-    }
-
-    #rightInfo {
-      width:100vw;
-      height:45vh;
-      transition: 0.4s;
-      /* border: 1px solid green; */
-    }
-
-    #resume {
-      width:100vw;
-      height:30vh;
-      transition: 0.4s;
-      align-items: center;
-      /****여기***/
-    }
-
-    #resume h2 {
-      line-height: 1px;
-      position: relative;
-      top:30px;
-    }
-  
-    #resume > p {
-      font-size: 14px;
-      transition: 0.4s;
-      justify-content: center;
-      line-height: 40px;
-    }
-    
-    #profile_info_text {
-      padding:10px;
-      transition: 0.4s;
-    }
-
-    #profile_info_text > p {
-      line-height:1px;
-      font-size: 14px;
-      transition: 0.4s;
-    }
-
-    
-    #profile_info_text span {
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    #skill {
-      width:100vw;
-      height:30vh;
-      transition: 0.4s;
-    }
-
-    #skill_text {
-      width:100vw;
-      transition: 0.4s;
-      justify-content: center;
-      /* border: 1px solid blue; */
-      /***여기**/
-    }
-
-    #skillcircle_Box_01{
-      width:100vw;
-      transition: 0.4s;
-      justify-content: center;
-      height:9vh;
-    }
-
-    #skillcircle_Box_02 {
-      width:100vw;
-      transition: 0.4s;
-      justify-content: center;
-      height:9vh;
-    }
-  };
+} ;

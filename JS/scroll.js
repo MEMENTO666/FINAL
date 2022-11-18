@@ -12,7 +12,7 @@ window.onload = function(){
           if (window.opera) delta = -delta;
       } 
       else if (event.detail)
-          delta = -event.detail / 3;
+          delta = -event.detail / 4;
 
       let moveTop = window.scrollY;
       let elmSelector = elm[index];
@@ -35,7 +35,6 @@ window.onload = function(){
         }
       }
 
-      const body = document.querySelector('html');
       window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
     });
   });
