@@ -1,14 +1,15 @@
-#topbutton{
+#topbutton {
   background-color: rgba(5, 5, 5, 0.658);
-  font-size: 1em;  color:rgb(31, 31, 31);
+  font-size: 1em;
+  color: rgb(31, 31, 31);
   line-height: 50px;
   text-align: center;
-  width:45px;
-  height:45px;
+  width: 45px;
+  height: 45px;
   border-radius: 40px;
   position: fixed;
   bottom: 40px;
-  right:20px;
+  right: 20px;
   transition-property: background-color, opacity, visibility;
   transition-duration: 0.3s, 0.5s, 0.5s;
   opacity: 0;
@@ -18,22 +19,22 @@
   align-items: center;
   justify-content: center;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
- }
- 
- #topbutton:after{
-   line-height: 40px;
-   }
- 
- #topbutton.show{
-   opacity:1;
-   visibility:visible;
- }
- 
- #topbutton.show:hover{
-   cursor:pointer;
-   background-color: rgb(0, 0, 0);
-   transition: 1s;
- }
+}
+
+#topbutton:after {
+  line-height: 40px;
+}
+
+#topbutton.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#topbutton.show:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  transition: 1s;
+}
 #topbutton > iconify-icon {
   cursor: pointer;
   color: rgb(255, 255, 255);
