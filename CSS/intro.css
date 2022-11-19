@@ -18,8 +18,8 @@
   padding: 2em 0em;
   width: 90%;
   color: white;
-  font-family: "lato",sans-serif;
-  font-weight:bold
+  font-family: "lato", sans-serif;
+  font-weight: bold;
 }
 
 #intro > p > span {
@@ -40,13 +40,12 @@
   animation: textBG 10s linear infinite;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #intro > p {
     font: 0.1em;
     border: 10px double rgba(255, 255, 255, 0.37);
-
   }
-  
+
   #intro > p > span {
     font: bold 4em/5 "Oswald", sans-serif;
     background: url(../Asset/space.jpg);
@@ -59,9 +58,5 @@
     -webkit-background-clip: text;
     color: transparent;
     animation: textBG 40s linear infinite;
-
   }
-  
-  
 }
-

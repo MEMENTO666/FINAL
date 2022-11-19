@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: bold;
   font-size: 50px;
 }
@@ -79,35 +79,29 @@
   transition: 0.7s;
 }
 
-
 .wrapper > .menu > li:nth-child(2) > a > p:hover {
   transition: 0.9s ease-out;
-  color: #01131E;
+  color: #01131e;
   transform: skew(-15deg);
 }
 
 .wrapper > .menu > li:nth-child(3) > a > p:hover {
   transition: 0.9s;
-  color: #FD9B00;
+  color: #fd9b00;
   transform: skew(-15deg);
-
 }
 
 .wrapper > .menu > li:nth-child(4) > a > p:hover {
   transition: 0.9s;
-  color: #CB3B3E;
+  color: #cb3b3e;
   transform: skew(-15deg);
-
 }
 
 .wrapper > .menu > li:nth-child(5) > a > p:hover {
   transition: 0.9s;
   color: #c70db7;
   transform: skew(-15deg);
-
 }
-
-
 
 input {
   display: none;
