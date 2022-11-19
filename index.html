@@ -10,18 +10,21 @@
   <link rel="stylesheet" href="css/portfolio_02.css"/>
   <link rel="stylesheet" href="css/portfolio_03.css"/>
   <link rel="stylesheet" href="css/profile.css"/>
+  <link rel="stylesheet" href="css/keyframe.css"/>
   <link rel="stylesheet" href="css/HamMenu.css"/>
   <link rel="stylesheet" href="css/topbutton.css"/>
-
+  <!-- ICON -->
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
   <script src="https://kit.fontawesome.com/aada43250b.js" crossorigin="anonymous"></script>
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -33,11 +36,11 @@
   <label for="active" class="menu-btn"><i class="fa-solid fa-bars"></i></label>
   <div class="wrapper">
     <ul class="menu">
-        <li><a href="#"><p>INTRO</p></a></li>
-        <li><a href="#"><p>PORTFOLIO-1</p></a></li>
-        <li><a href="#"><p>PORTFOLIO-2</p></a></li>
-        <li><a href="#"><p>PORTFOLIO-3</p></a></li>
-        <li><a href="#"><p>PROFILE</p></a></li>
+        <li><a href="#intro"><p>INTRO</p></a></li>
+        <li><a href="#portfolio_01"><p>I Am Not A Human Being</p></a></li>
+        <li><a href="#portfolio_02"><p>want to know that</p></a></li>
+        <li><a href="#portfolio_03"><p>ghost of tsushima</p></a></li>
+        <li><a href="#profile"><p>PROFILE</p></a></li>
         <li><a href="#"><p>???</p></a></li>
     </ul>
     </div>
@@ -51,26 +54,18 @@
     <!-- ! Intro section -->
     <div class="section">
     <div id="intro">
-      <!-- <div id="header">  -->
-        <!-- <div id="logoBox">
-          <div id="logoIcon"></div> 
-           </div> 
-         <div id="Menubox"> 
-           <ul id="MenuList">
-            <li>INTRO</li>
-            <li>PORTFOLIO-1</li>
-            <li>PORTFOLIO-2</li>
-            <li>PROFILE</li>
-            <li>CONTACT</li>
-          </ul>
-        </div>  -->
-        <!-- for문으로 한번에 이벤트 주기...? -->
-       <!-- </div>  -->
-      <div id="introText">
+      <p>
+        lee sung yoon
+        <span>
+          portfolio
+        </span>
+        &mdash; ui & ux designer &mdash;
+      </p>
+      <!-- <div id="introText">
         <h1 id="portfolioText">PORTFOLIO</h1>
         <p id="portfolioText_2">UI & UX designer</p>
         <p id="portfolioText_3">Leesungyoon</p>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -327,6 +322,7 @@
 
   <script src="JS/scroll.js"></script>
   <script src="JS/topbutton.js"></script>
+
   <script>AOS.init({
     easing: 'ease-out-back',
     duration: 1000,

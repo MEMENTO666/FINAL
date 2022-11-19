@@ -1,11 +1,12 @@
 #profile {
   width: 100vw;
   height: 100vh;
-  /* border: 1px solid blue; */
-  background-color: #211e1e;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #090d00;
+  font-family: "Lato", sans-serif;
+
 }
 
 #leftInfo {
@@ -31,8 +32,7 @@
 /** 프로필 사진 첨부 **/
 #profile_image > div {
   width: 250px;
-  height: 400px;
-  background-color: white;
+  height: 100%;
   background-image: url(../Asset/profile2.jpg);
   background-position: center;
   background-size: cover;
@@ -186,8 +186,7 @@
 #skillcircle_Box_01 > ul > li {
   width: 40px;
   height: 40px;
-  /* background-color: rgb(150, 144, 144); */
-  border-radius: 100%;
+  border-radius:100%;
   list-style: none;
   display: flex;
   align-items: center;
@@ -206,7 +205,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* border: 1px solid hotpink; */
 }
 
 #skillcircle_Box_02 > ul {

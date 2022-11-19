@@ -1,109 +1,67 @@
 #intro {
-  width:100vw;
-  height:100vh;
-  background-color: #211E1E;
-  display: flex;
-  flex-direction: column;
-
-}
-
-/* #header {
-  width:100vw;
-  display: flex;
-}
-
-#logoBox {
-  width:10vw;
-  height: 60px;
+  width: 100vw;
+  height: 100vh;
+  background: #090d00;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#logoIcon {
-  width:45px;
-  height:45px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#Menubox {
-  width:90vw;
-  height:60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
-
-#MenuList {
-  display: flex;
-  justify-content:space-around;
-  width:100%;
-  font-weight: bold;
-  position: relative;
-} 
-
-#MenuList > li {
-  list-style: none;
+#intro > p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  border: 10px double rgba(99, 76, 0, 0.61);
+  padding: 2em 0em;
+  width: 90%;
   color: white;
-  font-size: 16px;
-  position: relative;
-  cursor: pointer;
-}  */
-
-/*** header menu underline section ****/
-
-  /* #MenuList > li::after {
-  content: "";
-  height:3px;
-  width:0px;
-  background-color: #CC3942;
-  transition: 0.3s;
-  position: absolute;
-  bottom:0;
-  left: 0;
-  border-radius: 50%;
+  font-family: "lato",sans-serif;
+  font-weight:bold
 }
 
-#MenuList > li:hover::after {
-  width:100%;
-} */
-
-#introText {
-  width:100%;
-  height:100vh;
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  line-height: 10px;
-}
-
-#portfolioText {
-  font-size: 40px;
-  color: white;
-}
-
-#portfolioText_2 {
-  font-size: 18px;
-  color: white;
-}
-
-#portfolioText_3 {
-  font-size: 20px;
-  color: white;
-  font-family: 'Permanent Marker', cursive;
-  letter-spacing: 5px;
+#intro > p > span {
+  font: bold 5.5em/3 "Oswald", sans-serif;
+  letter-spacing: 0;
+  /* padding: 0.25em 0 0.325em; */
+  display: block;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0);
+  /* background: url(../Asset/space.jpg); */
+  /* background: url(../Asset/space2.jpg); */
+  /* background: url(../Asset/space3.jpg); */
+  /* background: url(../Asset/space4.jpg); */
+  background: url(../Asset/light.jpg);
+  /* background: url(../Asset/rain.jpg); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textBG 10s linear infinite;
 }
 
 @media screen and (max-width:768px) {
-  #MenuList {
-    justify-content: space-evenly;
-  }
+  #intro > p {
+    font: 0.1em;
+    border: 10px double rgba(255, 255, 255, 0.37);
 
-  #MenuList > li {
-    font-size: 11px;
-    transition: 0.5s;
   }
+  
+  #intro > p > span {
+    font: bold 4em/5 "Oswald", sans-serif;
+    background: url(../Asset/space.jpg);
+    /* background: url(../Asset/space2.jpg); */
+    /* background: url(../Asset/space3.jpg); */
+    /* background: url(../Asset/space4.jpg); */
+    /* background: url(../Asset/light.jpg); */
+    /* background: url(../Asset/rain.jpg); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textBG 40s linear infinite;
+
+  }
+  
+  
 }
+
