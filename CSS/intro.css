@@ -14,7 +14,7 @@
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  border: 10px double rgba(99, 76, 0, 0.61);
+  border: 10px double rgba(200, 190, 209, 0.61);
   padding: 2em 0em;
   width: 90%;
   color: white;
@@ -28,35 +28,35 @@
   /* padding: 0.25em 0 0.325em; */
   display: block;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0);
-  /* background: url(../Asset/space.jpg); */
+  background: url(../Asset/space.jpg);
   /* background: url(../Asset/space2.jpg); */
   /* background: url(../Asset/space3.jpg); */
   /* background: url(../Asset/space4.jpg); */
-  background: url(../Asset/light.jpg);
+  /* background: url(../Asset/light.jpg); */
   /* background: url(../Asset/rain.jpg); */
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: textBG 10s linear infinite;
+  animation: textBG 25s linear infinite;
 }
 
 @media screen and (max-width: 768px) {
   #intro > p {
     font: 0.1em;
-    border: 10px double rgba(255, 255, 255, 0.37);
+    border: 10px double rgba(228, 139, 88, 0.37);
   }
 
   #intro > p > span {
     font: bold 4em/5 "Oswald", sans-serif;
-    background: url(../Asset/space.jpg);
+    /* background: url(../Asset/space.jpg); */
     /* background: url(../Asset/space2.jpg); */
     /* background: url(../Asset/space3.jpg); */
     /* background: url(../Asset/space4.jpg); */
-    /* background: url(../Asset/light.jpg); */
+    background: url(../Asset/light.jpg);
     /* background: url(../Asset/rain.jpg); */
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: textBG 40s linear infinite;
+    animation: textBG 20s linear infinite;
   }
 }

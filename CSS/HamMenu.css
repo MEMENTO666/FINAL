@@ -79,6 +79,12 @@
   transition: 0.7s;
 }
 
+.wrapper > .menu > li:nth-child(1) > a > p:hover {
+  transition: 0.9s ease-out;
+  color: #005488;
+  transform: skew(-15deg);
+}
+
 .wrapper > .menu > li:nth-child(2) > a > p:hover {
   transition: 0.9s ease-out;
   color: #01131e;
