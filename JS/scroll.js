@@ -1,8 +1,9 @@
 window.onload = function () {
   const elm = document.querySelectorAll(".section");
   const elmCount = elm.length;
+  
   elm.forEach(function (item, index) {
-    item.addEventListener("mousewheel", function (event) {
+    item.addEventListener("mousewheel", (event) => {
       event.preventDefault();
       let delta = 0;
 
@@ -10,7 +11,7 @@ window.onload = function () {
       if (event.wheelDelta) {
         delta = event.wheelDelta / 120;
         if (window.opera) delta = -delta;
-      } else if (event.detail) delta = -event.detail / 4;
+      } else if (event.detail) delta = -event.detail / 5;
 
       let moveTop = window.scrollY;
       let elmSelector = elm[index];

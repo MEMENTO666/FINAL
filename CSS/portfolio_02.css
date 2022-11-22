@@ -90,6 +90,12 @@
   box-shadow: 2px 2px 10px #fd9c00c5;
 }
 
+#web_02 > a {
+  text-decoration: none;
+  color: white;
+}
+
+
 #design_02 {
   width: 60px;
   height: 40px;
