@@ -236,7 +236,7 @@
 
 /***SKILL media section***/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   #profile {
     flex-direction: column;
     align-items: center;
@@ -249,7 +249,7 @@
 
   #profile_info {
     width: 100vw;
-    height: 35vh;
+    height: 100%;
     /* justify-content: flex-start; */
     transition: 0.4s;
     justify-content: center;
@@ -308,7 +308,7 @@
 
   #skill {
     width: 100vw;
-    height: 30vh;
+    height: 100%;
     transition: 0.4s;
   }
 
