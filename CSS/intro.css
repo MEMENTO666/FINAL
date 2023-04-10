@@ -11,7 +11,7 @@
 }
 
 #intro > p {
-  font-size: 1.2em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   border: 10px double rgba(200, 190, 209, 0.61);
@@ -42,17 +42,17 @@
 
 @media screen and (max-width: 768px) {
   #intro > p {
-    font: 0.1em;
+    font-size: 1em;
     border: 10px double rgba(228, 139, 88, 0.37);
   }
 
   #intro > p > span {
-    font: bold 4em/5 "Oswald", sans-serif;
+    font: bold 3em/4 "Oswald", sans-serif;
     /* background: url(../Asset/space.jpg); */
     /* background: url(../Asset/space2.jpg); */
-    /* background: url(../Asset/space3.jpg); */
+    background: url(../Asset/space3.jpg);
     /* background: url(../Asset/space4.jpg); */
-    background: url(../Asset/light.jpg);
+    /* background: url(../Asset/light.jpg); */
     /* background: url(../Asset/rain.jpg); */
     background-clip: text;
     -webkit-background-clip: text;
